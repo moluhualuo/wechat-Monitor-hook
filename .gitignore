@@ -1,0 +1,43 @@
+# === 用户明确要求屏蔽 ===
+tmp/
+
+# === 构建产物 ===
+**/build/
+.gradle/
+*.apk
+*.aab
+*.idsig
+
+# === 本地环境/缓存目录 ===
+.android-user-home/
+.gradle-home/
+.gradle-user-home/
+
+# === 工具/IDE 本地配置 ===
+.claude/
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# === 签名 & 凭据（安全） ===
+*.keystore
+*.jks
+debug.keystore
+keystore.properties
+
+# === 第三方/大体积二进制 ===
+wechat_base.apk
+
+# === 日志 / 临时 ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+desktop.ini

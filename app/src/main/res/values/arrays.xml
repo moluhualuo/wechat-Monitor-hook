@@ -1,0 +1,20 @@
+<resources>
+    <string-array name="xposed_scope">
+        <item>com.tencent.mm</item>
+        <item>com.tencent.mm:push</item>
+        <item>com.tencent.mm:support</item>
+    </string-array>
+
+    <string-array name="message_types">
+        <item>文本消息</item>
+        <item>图片消息</item>
+        <item>语音消息</item>
+        <item>视频消息</item>
+        <item>文件消息</item>
+        <item>红包消息</item>
+        <item>转账消息</item>
+        <item>位置消息</item>
+        <item>名片消息</item>
+        <item>其他消息</item>
+    </string-array>
+</resources>

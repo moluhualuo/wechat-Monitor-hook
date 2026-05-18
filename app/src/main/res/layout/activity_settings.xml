@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2F4F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="#FF1F2937"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ============== 监听开关区块 ============== -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="监听" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <Switch
+                android:id="@+id/switch_monitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_monitor"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFEEEEEE"
+                android:layout_marginBottom="8dp" />
+
+            <Switch
+                android:id="@+id/switch_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_messages"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- ============== 主动发送区块 ============== -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/send_section_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_section_hint"
+                android:textColor="#FF6B7280"
+                android:textSize="12sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_talker_hint"
+                android:textColor="#FF374151"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_send_talker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:hint="@string/send_default_talker"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_content_hint"
+                android:textColor="#FF374151"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/et_send_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="2"
+                android:maxLines="5"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_button"
+                android:textColor="#FFFFFFFF"
+                android:backgroundTint="#FF2563EB" />
+        </LinearLayout>
+
+        <!-- ============== 日志位置区块 ============== -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/save_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_location_hint"
+                android:textColor="#FF6B7280"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/sdcard/WeChatMonitor"
+                android:textColor="#FF374151"
+                android:textSize="13sp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+        <!-- ============== 状态区块 ============== -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="状态" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status_stopped"
+                android:textColor="#FF374151"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- ============== 消息预览区块 ============== -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/preview_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/tv_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preview_empty"
+                    android:textColor="#FF374151"
+                    android:textSize="13sp"
+                    android:fontFamily="monospace" />
+            </ScrollView>
+        </LinearLayout>
+
+        <!-- ============== 操作按钮 ============== -->
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_logs"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_logs"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#FFEF4444" />
+
+    </LinearLayout>
+</ScrollView>

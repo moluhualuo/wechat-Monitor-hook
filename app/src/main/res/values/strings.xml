@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微信聊天监听</string>
+    <string name="settings_title">设置</string>
+    <string name="enable_monitor">启用监听</string>
+    <string name="log_messages">记录消息日志</string>
+    <string name="save_location">日志位置</string>
+    <string name="log_location_hint">优先写入公共文档目录：/sdcard/Documents/WeChatMonitor/logs</string>
+    <string name="export_logs">导出日志</string>
+    <string name="clear_logs">清空日志</string>
+    <string name="status_monitoring">监听中</string>
+    <string name="status_stopped">已停止</string>
+    <string name="preview_title">接收消息预览</string>
+    <string name="preview_empty">暂无接收消息预览</string>
+    <string name="preview_loading_failed">预览读取失败</string>
+
+    <string name="send_section_title">主动发送</string>
+    <string name="send_section_hint">点击发送后,通过广播直达微信进程内的 Hook,无需文件,无需切回微信</string>
+    <string name="send_talker_hint">talker (微信号 / wxid / filehelper / *@chatroom)</string>
+    <string name="send_content_hint">消息内容</string>
+    <string name="send_button">立即发送</string>
+    <string name="send_default_talker">filehelper</string>
+    <string name="send_invalid">请填写 talker 和消息内容</string>
+    <string name="send_command_written">广播已发送至微信进程,等待 Hook 执行: %1$s</string>
+    <string name="send_command_failed">命令写入失败: %1$s</string>
+</resources>

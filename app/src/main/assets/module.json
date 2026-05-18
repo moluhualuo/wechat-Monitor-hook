@@ -1,0 +1,10 @@
+{
+    "modulePackageName": "com.wechat.monitor",
+    "moduleName": "WeChatMonitor",
+    "moduleDescription": "微信消息监控模块",
+    "moduleEntrypoint": "com.wechat.monitor.WeChatMonitorHook",
+    "apiVersion": 101,
+    "scope": [
+        "com.tencent.mm"
+    ]
+}
